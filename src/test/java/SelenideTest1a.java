@@ -60,11 +60,11 @@ public class SelenideTest1a extends Common {
         Page2SearchResult.chooseCategory(); // choose product category
         Page3Category.chooseProducer(); // choose producer, choose product with the greatest rating
         Page4Product.productBuy(); // go to product page, add to cart, get product price and name
-        Page5Cart1.cartStep1();// cart filling, step 1 - skip
-        Page6Cart2.cartStep2(); // cart filling, step 2 - skip login
-        Page7Cart3.cartStep3(); // cart filling, step 3 - fill customer data
-        Page8Cart4.cartStep4(); // cart filling, step 4 - choose payment method
-        Page9CartFinalValidation.cartFinal(); // validate all datas
+        Page5CartEnter.cartStep1();// cart filling, step 1 - skip
+        Page6CartLogin.cartStep2(); // cart filling, step 2 - skip login
+        Page7CartDelivery.cartStep3(); // cart filling, step 3 - fill customer data
+        Page8CartPaymentType.cartStep4(); // cart filling, step 4 - choose payment method
+        Page9CartConfirmation.cartFinal(); // validate all datas
 
     }
 

@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.sleep;
 
-public class Page7Cart3 {
+public class Page7CartDelivery {
     public static void cartStep3(){
 
         sleep(1000);

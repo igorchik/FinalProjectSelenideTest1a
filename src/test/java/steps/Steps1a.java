@@ -51,27 +51,27 @@ public class Steps1a {
 
     @Then("I enter cart I press button Next")
     public void iEnterCartIPressButtonNext() {
-        Page5Cart1.cartStep1();
+        Page5CartEnter.cartStep1();
     }
 
     @And("In second step I skip registration and choose option without registration")
     public void inSecondStepISkipRegistrationAndChooseOptionWithoutRegistration() {
-        Page6Cart2.cartStep2();
+        Page6CartLogin.cartStep2();
     }
 
     @And("In third step I fill form with data from Models.Customer and choose delivery method")
     public void inThirdStepIFillFormWithDataFromModelsCustomerAndChooseDeliveryMethod() {
-        Page7Cart3.cartStep3();
+        Page7CartDelivery.cartStep3();
     }
 
     @And("In fourth step I choose payment method by cash")
     public void inFourthStepIChoosePaymentMethodByCash() {
-        Page8Cart4.cartStep4();
+        Page8CartPaymentType.cartStep4();
     }
 
     @And("In final step I run data validation and assert that product price and name from product card is the same as in cart, also validate customers data")
     public void inFinalStepIRunDataValidationAndAssertThatProductPriceAndNameFromProductCardIsTheSameAsInCartAlsoValidateCustomersData() {
-        Page9CartFinalValidation.cartFinal();
+        Page9CartConfirmation.cartFinal();
     }
 
     @And("I stop driver")

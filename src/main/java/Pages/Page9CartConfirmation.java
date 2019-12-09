@@ -7,7 +7,7 @@ import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class Page9CartFinalValidation {
+public class Page9CartConfirmation {
     public static void cartFinal(){
 
         // print product data to validate

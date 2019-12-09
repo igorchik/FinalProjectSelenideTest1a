@@ -15,7 +15,9 @@ public class Page3Category {
         AddBlocks.closeBanners();
 
         // find and choose producer
-        SelenideElement producerList = $("div.items-holder.always-visible.ps-container.ps-theme-default.ps-active-y");
+
+        SelenideElement producerList = $("div.items-holder.always-visible.ps-container.ps-theme-default.ps-active-y"); // working version
+                //SelenideElement producerList = $("div.title-holder").$(byAttribute("innerText", "Ra\u017eot\u0101js")).parent();
                 //SelenideElement producerList = $(byAttribute("data-attribute-id","1431")).should(Condition.exist);
                 //SelenideElement producerList = $(byAttribute("data-attribute-id","1664")).should(Condition.exist);
                 //SelenideElement producerList = $(byId("search-sidebar")).$(byText("Ra\u017eot\u0101js")).parent().parent();
