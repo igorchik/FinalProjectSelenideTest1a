@@ -29,7 +29,8 @@ public class Page7Cart3 {
         //$("div.unit").$(byId("order_main_data_advertisement_subscription_type")).selectOptionByValue("NONE");
 
         // news decline
-        SelenideElement newsAccept = $(byXpath("//*[@id=\"order_form\"]/div[2]/div[1]/div[2]/section/div[1]/div[1]/div[3]/span/input"));
+        SelenideElement newsAccept = $("span.ui-combobox").$("input.ui-state-default.ui-autocomplete-input.ui-widget.ui-widget-content");
+        //SelenideElement newsAccept = $(byXpath("//*[@id=\"order_form\"]/div[2]/div[1]/div[2]/section/div[1]/div[1]/div[3]/span/input"));
         newsAccept.click();
         newsAccept.sendKeys("Nev\u0113los sa\u0146emt");
 

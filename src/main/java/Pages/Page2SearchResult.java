@@ -15,12 +15,12 @@ public class Page2SearchResult {
         // choose 1st offered category in sidebar
         if ($(byId("search-sidebar")).$("div.ait-search-categories-block").$("div:nth-child(2)").exists()) {
             $("#search-sidebar > div.ait-search-categories-content > div > div:nth-child(1) > ul > li:nth-child(1) > a").scrollTo().hover().click();
-            //$(byId("search-sidebar")).$("div.ait-search-categories-block").$("div:first-child").$("*:nth-child(1)").$("*:first-child").scrollTo().hover().click(); // need to improve
+                //$(byId("search-sidebar")).$("div.ait-search-categories-block").$("div:first-child").$("*:nth-child(1)").$("*:first-child").scrollTo().hover().click(); // need to improve
             System.out.println("at least 2 categories / div:nth-child(2) EXIST");
         }else{
 
             $(byId("search-sidebar")).$("div.ait-search-categories-block").$("div:first-child").$("*:nth-child(2)").scrollTo().hover().click();
-            //$(byId("search-sidebar")).$("div.ait-search-categories-block").$("*:nth-child(2)").scrollTo().hover().click(); // working
+                //$(byId("search-sidebar")).$("div.ait-search-categories-block").$("*:nth-child(2)").scrollTo().hover().click(); // working
             System.out.println("1 category / div:nth-child(2) NOT EXIST");
         }
     }
